@@ -1,0 +1,14 @@
+# BTCPayServer client library in Java
+
+[BTCPayServer Greenfield API documentation](https://docs.btcpayserver.org/API/Greenfield/v1/).
+
+## Running example CLI
+
+The `CLI` class demonstrates the API by creating an invoice.
+
+```sh
+$ nix build .#jar
+$ java -cp lib/jackson-databind-2.13.4.2.jar:lib/jackson-core-2.13.4.jar:lib/jackson-annotations-2.13.4.jar:result/btcpay.jar com.orijtech.btcpay.CLI \
+	<BTCPayServer URL> <Store ID> <Auth token>
+```
+
